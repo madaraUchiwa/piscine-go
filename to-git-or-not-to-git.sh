@@ -1,5 +1,3 @@
 #!/bin/sh
-
-#name=$(curl https://api.github.com/users/madaraUchiwa | grep '"id":' | sed -e 's/^.": "//g' -e 's/",.$//g')
-
-echo '26380185'
+id=$(curl -s https://api.github.com/users/madaraUchiwa | jq .id)
+echo id
