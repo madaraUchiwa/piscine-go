@@ -1,3 +1,3 @@
 #!/bin/bash
-name=$(curl -s https://api.github.com/users/madaraUchiwa | jq ".login")
+name=$(curl -s https://raw.githubusercontent.com/kigiri/superhero-api/master/api/all.json | jq ".name")
 echo $name
